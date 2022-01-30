@@ -1,9 +1,38 @@
-.main {
-  display: flex;
-  justify-content: space-around;
+div {
+  width: 300px;
+  margin: 0 auto;
 }
-h1 {
-  text-align: center;
-  padding: 10px 0px;
-  color: crimson;
+li {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  background-color: mediumblue;
+  align-items: center;
+  color: #ddd;
+  width: 200px;
+  margin-top: 4px;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 10px;
+}
+.btn-group {
+  margin-left: 10px;
+}
+
+.btn-group button {
+  background-color: crimson;
+  border: none;
+  padding: 5px;
+  color: #ddd;
+  margin-left: 3px;
+  font-size: 10px;
+  border-radius: 5px;
+}
+.btn-group button:nth-child(1) {
+  background-color: green;
+}
+input {
+  outline: none;
+  width: 140px;
 }

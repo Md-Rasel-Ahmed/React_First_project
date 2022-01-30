@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Todo from "./Todos_valu";
+import Todo from "./Todos";
 function HandleTodos() {
   const [inputVal, setInputVal] = useState("");
   const [todos, setTodos] = useState([]);

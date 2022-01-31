@@ -17,15 +17,3 @@ code {
   padding: 0;
   box-sizing: border-box;
 }
-
-.App {
-  text-align: center;
-  margin-top: 1rem;
-}
-.active {
-  color: blue;
-  text-decoration: none;
-  font-weight: bold;
-  border-bottom: 3px solid blue;
-  transform: sc;
-}

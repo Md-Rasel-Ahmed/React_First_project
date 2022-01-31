@@ -8,8 +8,9 @@ const Todos = (props) => {
         type="text"
         value={props.inputVal}
       />
-      <button onClick={props.addTodo}>Add Todo</button>
-      <ul>
+      <button onClick={props.addTodo}>Add Student</button>
+      <ul className="ul">
+        <h3>All Students</h3>
         {props.todos.map((todo) => {
           return (
             <li key={todo.id}>
@@ -28,6 +29,22 @@ const Todos = (props) => {
                   }}
                 >
                   Delete
+                </button>
+                <button
+                  key={todo.id}
+                  onClick={() => {
+                    props.presentBtn(todo);
+                  }}
+                >
+                  Pre
+                </button>
+                <button
+                  key={todo}
+                  onClick={() => {
+                    props.absentBtn(todo);
+                  }}
+                >
+                  Abs
                 </button>
               </div>
             </li>
